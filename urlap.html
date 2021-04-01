@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="hu-hu" dir="ltr" vocab="http://schema.org/">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/images/favikon.png">
+    <link rel="apple-touch-icon"
+        href="/templates/yootheme/vendor/yootheme/theme-joomla/assets/images/apple-touch-icon.png">
+    <meta charset="utf-8" />
+    <base href="https://egeszsegkonyha.hu/index.php/etlapunk" />
+    <meta name="keywords"
+        content="ételrendelés, étel házhozszállítás, ebéd házhozszállítás, ételrendelés budapest, ebédrendelés debrecen, étel házhozszállítás budapest, ebédrendelés, ebéd házhozszállítás budapest, ebéd rendelés, diétás étel házhozszállítás, online ételrendelés, ebédmenü budapest, egészséges étel házhozszállítás, ebédmenü, ebédrendelés budapest, ebéd rendelés budapest" />
+    <meta name="dcterms.title" content="egeszsegkonyha.hu" />
+    <meta name="dcterms.description" content="egeszsegkonyha.hu" />
+    <meta name="dcterms.language" content="hu-HU" />
+    <meta name="description"
+        content="Ha ebédrendelés, ebéd házhozszállítás kérdése van, olvassa el gyakran feltett kérdéseinket, vagy keressen bennünket bizalommal e-mailen és telefonon." />
+    <meta name="generator" content="Joomla! - Open Source Content Management" />
+    <title>Étlapunk</title>
+    <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link href="/plugins/system/bdthemes_shortcodes/css/shortcode-ultimate.css" rel="stylesheet" />
+    <link href="/plugins/system/bdthemes_shortcodes/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/plugins/content/etlap/js/jquery-ui.css" rel="stylesheet" />
+    <link href="/plugins/content/etlap/js/etlap.css?r=87483467146883" rel="stylesheet" />
+    <link href="/plugins/content/etlap/js/etlap2.css?r=3228732184678" rel="stylesheet" />
+    <link href="/plugins/system/jce/css/content.css?1809a6e9b355b80a3a64574d8dba5339" rel="stylesheet" />
+    <link href="/templates/yootheme/css/theme.11.css?1616595744" rel="stylesheet" />
+    <link href="/templates/yootheme/css/theme.update.css?2.4.1" rel="stylesheet" />
+    <link href="/media/system/css/modal.css?1809a6e9b355b80a3a64574d8dba5339" rel="stylesheet" />
+    <link href="/media/widgetkit/wk-styles-6048840a.css" rel="stylesheet" id="wk-styles-css" />
+    <style>
+        .sessionkeepermessage h1,
+        .sessionkeeperexpired h1 {
+            text-align: center;
+        }
+
+        .sessionkeepermessage p.message,
+        .sessionkeeperexpired p.message {
+            text-align: justify;
+        }
+
+        .sessionkeepermessage button {
+            width: 48%;
+            margin: 0 1%;
+            float: left;
+            clear: none;
+        }
+    </style>
+    <script type="application/json"
+        class="joomla-script-options new">{"csrf.token":"ec36e9f13d83f54cbda03a4ac154a5ab","system.paths":{"root":"","base":""}}</script>
+    <script src="/media/jui/js/jquery.min.js?1809a6e9b355b80a3a64574d8dba5339"></script>
+    <script src="/media/jui/js/jquery-noconflict.js?1809a6e9b355b80a3a64574d8dba5339"></script>
+    <script src="/media/jui/js/jquery-migrate.min.js?1809a6e9b355b80a3a64574d8dba5339"></script>
+    <script src="/plugins/system/bdthemes_shortcodes/js/shortcode-ultimate.js"></script>
+    <script src="/media/jui/js/bootstrap.min.js?1809a6e9b355b80a3a64574d8dba5339"></script>
+    <script src="/plugins/content/etlap/js/jquery-ui.min.js"></script>
+    <script src="/plugins/content/etlap/js/jquery.blockUI.js"></script>
+    <script src="/plugins/content/etlap/js/etlap.js?r=47916055041045"></script>
+    <script src="/media/system/js/core.js?1809a6e9b355b80a3a64574d8dba5339"></script>
+    <script src="https://egeszsegkonyha.hu//plugins/system/joomlaspecialista/joomlaspecialista.js"></script>
+    <script src="/modules/mod_improved_ajax_login/script/improved_ajax_login.js?v=2.7.308"></script>
+    <script src="/modules/mod_improved_ajax_login/themes/simple/theme.js?v=2.7.308"></script>
+    <script src="/templates/yootheme/vendor/yootheme/theme-analytics/app/analytics.min.js?2.4.1" defer></script>
+    <script src="/templates/yootheme/vendor/assets/uikit/dist/js/uikit.min.js?2.4.1"></script>
+    <script src="/templates/yootheme/vendor/assets/uikit/dist/js/uikit-icons.min.js?2.4.1"></script>
+    <script src="/templates/yootheme/js/theme.js?2.4.1"></script>
+    <script src="/media/system/js/mootools-core.js?1809a6e9b355b80a3a64574d8dba5339"></script>
+    <script src="/media/system/js/mootools-more.js?1809a6e9b355b80a3a64574d8dba5339"></script>
+    <script src="/media/plg_system_sessionkeeper/countdown.js"></script>
+    <script src="/media/system/js/modal.js?1809a6e9b355b80a3a64574d8dba5339"></script>
+    <script src="/media/plg_system_sessionkeeper/sessionkeeperwarning.js"></script>
+    <script src="/media/widgetkit/uikit2-00ee7e5d.js"></script>
+    <script src="/media/widgetkit/wk-scripts-d2fda8e0.js"></script>
+    <script>
+        ; jQuery(function ($) {
+            $("input[type='file'][name^='jform[improved]']").each(function () {
+                $(this).next().next().html(this.size + "MB");
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            Array.prototype.slice.call(document.querySelectorAll('a span[id^="cloak"]')).forEach(function (span) {
+                span.innerText = span.textContent;
+            });
+        });
+        jQuery(function ($) {
+            SqueezeBox.initialize({});
+            initSqueezeBox();
+            $(document).on('subform-row-add', initSqueezeBox);
+
+            function initSqueezeBox(event, container) {
+                SqueezeBox.assign($(container || document).find('a.modal').get(), {
+                    parse: 'rel'
+                });
+            }
+        });
+
+        window.jModalClose = function () {
+            SqueezeBox.close();
+        };
+
+        // Add extra modal close functionality for tinyMCE-based editors
+        document.onreadystatechange = function () {
+            if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE) {
+                if (typeof window.jModalClose_no_tinyMCE === 'undefined') {
+                    window.jModalClose_no_tinyMCE = typeof (jModalClose) == 'function' ? jModalClose : false;
+
+                    jModalClose = function () {
+                        if (window.jModalClose_no_tinyMCE) window.jModalClose_no_tinyMCE.apply(this, arguments);
+                        tinyMCE.activeEditor.windowManager.close();
+                    };
+                }
+
+                if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined') {
+                    if (typeof (SqueezeBox) == 'undefined') SqueezeBox = {};
+                    window.SqueezeBoxClose_no_tinyMCE = typeof (SqueezeBox.close) == 'function' ? SqueezeBox.close : false;
+
+                    SqueezeBox.close = function () {
+                        if (window.SqueezeBoxClose_no_tinyMCE) window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
+                        tinyMCE.activeEditor.windowManager.close();
+                    };
+                }
+            }
+        };
+
+        window.sessionkeeper_config = { "timeout": 30, "messagetype": "modal", "redirect": "", "dimension": { "x": 400, "y": 300 }, "strings": { "title": "Automatikus kijelentkez\u00e9s", "expiredtitle": "Kil\u00e9pve", "rescue": "Bel\u00e9pve maradok", "abandon": "M\u00e9gsem", "message": "A biztons\u00e1gi id\u0151korl\u00e1t hamarosan lej\u00e1r. A gomb megnyom\u00e1s\u00e1val az id\u0151keret \u00fajraind\u00edthat\u00f3, ellenben a rendszer automatikusan kil\u00e9pteti. Az \u00fajraind\u00edt\u00e1s nem friss\u00edti a b\u00f6ng\u00e9sz\u0151t!", "expired": "Az oldalon t\u00fal sok\u00e1ig nem t\u00f6rt\u00e9nt m\u0171velet, \u00edgy a rendszer automatikusan kil\u00e9ptette" }, "warning": 2, "keepalivelight": false, "path": "\/index.php" };
+    </script>
+    <link rel="stylesheet" href="/modules/mod_improved_ajax_login/cache/210/61b67f5689b07149129f4d878a3717d5.css"
+        type="text/css" />
+    <script data-cfasync="false">
+        document[(_el = document.addEventListener) ? 'addEventListener' : 'attachEvent'](_el ? 'DOMContentLoaded' : 'onreadystatechange', function () {
+            if (!_el && document.readyState != 'complete') return;
+            new ImprovedAJAXLogin({
+                id: 210,
+                isGuest: 0,
+                oauth: {},
+                bgOpacity: 40 / 100,
+                returnUrl: 'https://egeszsegkonyha.hu/index.php/etlapunk?survey=a0592a79fbf5a9daf630d6341bc68d2da23513ca',
+                border: parseInt('F2F2F2|*|18|*|39ADD2|*|9|*|1'.split('|*|')[1]),
+                padding: 3,
+                useAJAX: 0,
+                openEvent: 'onclick',
+                wndCenter: 1,
+                regPopup: 1,
+                dur: 300,
+                timeout: 0,
+                base: '/',
+                theme: 'simple',
+                socialProfile: '',
+                socialType: 'socialIco',
+                cssPath: '/modules/mod_improved_ajax_login/cache/210/61b67f5689b07149129f4d878a3717d5.css',
+                regPage: 'joomla',
+                captcha: '',
+                captchaVer: '',
+                showHint: 0,
+                geolocation: true,
+                windowAnim: '1',
+                maxfilesize: 32 * 1024 * 1024
+            });
+        });
+    </script>
+    <script data-cfasync="false">
+        document[(_el = document.addEventListener) ? 'addEventListener' : 'attachEvent'](_el ? 'DOMContentLoaded' : 'onreadystatechange', function () {
+            if (!_el && document.readyState != 'complete') return;
+            var $ = window.jq183 || jQuery;
+            jQuery('input[name="jform[improved][postal_code]"]').attr('maxlength', 4);
+            jQuery(document).ready(function () {
+                console.log(jQuery('select[name="jform[improved][town]"] option[value="Pécel"]').remove())
+            })
+        });
+    </script>
+    <script>var $theme = { "google_analytics": "UA-164761433-1", "google_analytics_anonymize": "" };</script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '355654611592777');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=355654611592777&ev=PageView
+&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
+
+<body class="uj_etlap">
+
+
+
+    <div class="tm-page">
+
+
+        <div class="tm-header-mobile uk-hidden@m">
+
+
+            <div class="uk-navbar-container">
+                <nav uk-navbar>
+
+                    <div class="uk-navbar-left">
+
+
+                        <a class="uk-navbar-toggle" href="#tm-mobile" uk-toggle>
+                            <div uk-navbar-toggle-icon></div>
+                        </a>
+
+
+                    </div>
+
+                    <div class="uk-navbar-center">
+
+                        <a href="https://egeszsegkonyha.hu/index.php" class="uk-navbar-item uk-logo">
+                            <img alt src="/templates/yootheme/cache/uj_logo_ek_mobil230-dc2228fb.png"
+                                srcset="/templates/yootheme/cache/uj_logo_ek_mobil230-dc2228fb.png 230w"
+                                sizes="(min-width: 230px) 230px" data-width="230" data-height="27"></a>
+                    </div>
+
+
+                </nav>
+            </div>
+
+
+
+            <div id="tm-mobile" uk-offcanvas mode="slide" overlay>
+                <div class="uk-offcanvas-bar">
+
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+
+
+                    <div class="uk-child-width-1-1" uk-grid>
+                        <div>
+                            <div class="uk-panel" id="module-menu-mobile">
+
+
+
+                                <ul class="uk-nav uk-nav-default">
+
+                                    <li class="uk-active"><a href="/index.php/etlapunk">Étlapunk</a></li>
+                                    <li><a href="/index.php/last-minute">Last Minute</a></li>
+                                    <li><a href="/index.php/pontok">Pontok</a></li>
+                                    <li><a href="/index.php/cegunk">Cégünk</a></li>
+                                    <li><a href="/index.php/tudastar">Info</a></li>
+                                    <li><a href="http://messenger.providesupport.com/messenger/egeszsegkonyha.html"
+                                            target="_blank">Chat</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel" id="module-tm-2">
+
+
+
+                                <div class="uk-margin-remove-last-child custom">
+                                    <ul class="uk-flex-inline uk-flex-middle uk-flex-nowrap uk-grid-small" uk-grid>
+                                        <li>
+                                            <a href="https://www.facebook.com/Egeszsegkonyha/" class="uk-icon-button"
+                                                target="_blank" uk-icon="{&quot;icon&quot;:&quot;facebook&quot;}"></a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:info@egeszsegkonyha.hu" class="uk-icon-button"
+                                                uk-icon="{&quot;icon&quot;:&quot;mail&quot;}"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="tm-toolbar tm-toolbar-default uk-visible@m">
+            <div class="uk-container uk-flex uk-flex-middle">
+
+                <div>
+                    <div class="uk-grid-medium uk-child-width-auto uk-flex-middle"
+                        uk-grid="margin: uk-margin-small-top">
+
+                        <div>
+                            <div class="uk-panel" id="module-tm-1">
+
+
+
+                                <div class="uk-margin-remove-last-child custom">
+                                    <ul class="uk-flex-inline uk-flex-middle uk-flex-nowrap uk-grid-small" uk-grid>
+                                        <li>
+                                            <a href="https://www.facebook.com/Egeszsegkonyha/" class="uk-icon-button"
+                                                target="_blank" uk-icon="{&quot;icon&quot;:&quot;facebook&quot;}"></a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:info@egeszsegkonyha.hu" class="uk-icon-button"
+                                                uk-icon="{&quot;icon&quot;:&quot;mail&quot;}"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel" id="module-220">
+
+
+
+                                <div class="uk-margin-remove-last-child custom">
+                                    <div><span style="font-size: 12pt;"><a
+                                                href="Tel:+36-70-333-1360">+36-70-333-1360</a>,&nbsp; <a
+                                                href="Tel:+36-1-233-2240">+36-1-233-2240</a></span></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel loginmodulsfx" id="module-210">
+
+
+                                <div id="mod_improved_ajax_login-210">
+
+                                    <a class="userBtn selectBtn" onclick="return false"
+                                        href="/index.php/kisadmin/profile?layout=edit">
+                                        <span class="loginBtn">Keresztury Balázs</span>
+                                    </a>
+                                    <div class="ial-usermenu">
+                                        <div class="loginWndInside">
+                                            <div class="loginLst">
+                                                <a class="settings"
+                                                    href="/index.php/kisadmin/profile?layout=edit">Profilom</a>
+                                                <a class="mitem" target=""
+                                                    href="/index.php/etlapunk?order">Rendelések</a>
+                                                <a class="mitem" target="" href="/index.php/etlapunk?pay">Fizetések</a>
+                                                <a class="logout" href="javascript:;">Kijelentkezés</a>
+                                            </div>
+                                        </div>
+                                        <form action="/index.php/component/users/?task=user.logout&amp;Itemid=523"
+                                            method="post" name="ialLogout" class="ial-logout hidden">
+                                            <input type="hidden" value="com_users" name="option" />
+                                            <input type="hidden" value="user.logout" name="task" />
+                                            <input type="hidden" name="return"
+                                                value="aHR0cHM6Ly9lZ2VzenNlZ2tvbnloYS5odS9pbmRleC5waHAvZXRsYXB1bms/c3VydmV5PWEwNTkyYTc5ZmJmNWE5ZGFmNjMwZDYzNDFiYzY4ZDJkYTIzNTEzY2E=" />
+                                            <input type="hidden" name="ec36e9f13d83f54cbda03a4ac154a5ab" value="1" />
+                                        </form>
+                                    </div>
+                                </div>
+                                <script>var ialText = { "COM_USERS_REGISTER_REQUIRED": "<strong class=\"red\">*<\/strong> A mez\u0151 kit\u00f6lt\u00e9se k\u00f6telez\u0151", "COM_USERS_REGISTRATION": "Felhaszn\u00e1l\u00f3i regisztr\u00e1ci\u00f3", "IAL_PLEASE_WAIT": "Kis t\u00fcrelmet", "IAL_VERY_WEAK": "Nagyon gyenge", "IAL_WEAK": "Gyenge", "IAL_REASONABLE": "Elfogadhat\u00f3", "IAL_STRONG": "Er\u0151s", "IAL_VERY_STRONG": "Nagyon er\u0151s", "COM_MEDIA_FIELD_MAXIMUM_SIZE_LABEL": "Maxim\u00e1lis m\u00e9ret (MB-ban)", "COM_MEDIA_ERROR_WARNFILETOOLARGE": "Ez a f\u00e1jl t\u00fal nagy felt\u00f6lt\u00e9sre." };</script>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="tm-header uk-visible@m" uk-header>
+
+
+
+
+            <div class="tm-headerbar-top">
+                <div class="uk-container">
+
+                    <div class="uk-text-center">
+
+                        <a href="https://egeszsegkonyha.hu/index.php" class="uk-logo">
+                            <img alt src="/templates/yootheme/cache/uj_logo_ek2-b2b5eae1.png"
+                                srcset="/templates/yootheme/cache/uj_logo_ek2-78a5a2bc.png 707w, /templates/yootheme/cache/uj_logo_ek2-b2b5eae1.png 708w"
+                                sizes="(min-width: 708px) 708px" data-width="708" data-height="99"></a>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+            <div class="uk-navbar-container">
+
+                <div class="uk-container">
+                    <nav class="uk-navbar"
+                        uk-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;boundary&quot;:&quot;!.uk-navbar-container&quot;}">
+
+                        <div class="uk-navbar-center">
+
+
+                            <ul class="uk-navbar-nav">
+
+                                <li class="uk-active"><a href="/index.php/etlapunk">
+                                        <div>Étlapunk<div class="uk-navbar-subtitle">Online rendelés</div>
+                                        </div>
+                                    </a></li>
+                                <li><a href="/index.php/last-minute">
+                                        <div>Last Minute<div class="uk-navbar-subtitle">Még nem késő rendelni</div>
+                                        </div>
+                                    </a></li>
+                                <li><a href="/index.php/pontok">
+                                        <div>Pontok<div class="uk-navbar-subtitle">Gyűjtse Ön is</div>
+                                        </div>
+                                    </a></li>
+                                <li><a href="/index.php/cegunk">
+                                        <div>Cégünk<div class="uk-navbar-subtitle">Bemutatkozunk</div>
+                                        </div>
+                                    </a></li>
+                                <li><a href="/index.php/tudastar">
+                                        <div>Info<div class="uk-navbar-subtitle">Hasznos</div>
+                                        </div>
+                                    </a></li>
+                                <li><a href="http://messenger.providesupport.com/messenger/egeszsegkonyha.html"
+                                        target="_blank">
+                                        <div>Chat<div class="uk-navbar-subtitle">Mondja el</div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+
+
+                        </div>
+
+                    </nav>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+        <div id="system-message-container" data-messages="[]">
+        </div>
+
+        <div style='padding:10px;'>
+            <form method='post' action='/index.php/etlapunk?survey=a0592a79fbf5a9daf630d6341bc68d2da23513ca'>
+            <!-- <form method="post" action="https://httpbin.org/anything"> -->
+                <input type='hidden' name='survey' value='a0592a79fbf5a9daf630d6341bc68d2da23513ca'>
+                <input type='hidden' name='week' value='202113'>
+                <table class='ipaform' cellspacing=1 cellpadding=3>
+                    <tr>
+                        <td colspan=8>
+                            <h3>A 2021. 13. hét értékelése</h3>
+                            Tisztelt <b>Keresztury Balázs</b>!<br><br>Kérjük válaszoljon az alábbi kérdesekre. Minden
+                            megvalaszolt kérdésért <b>10</b> pontot kap, melyet összegyüjtve fel tud használni rendelési
+                            kedvezményre fizetéskor.<br><br>Önnek jelenleg <b>3850</b> pontja van.<br><br><b>Köszönjük
+                                megtisztelő együttműködését!</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan=5>Kérdés</h4>
+                        </th>
+                        <th>Elégedettsége<br><small>Kevésbé&nbsp;&nbsp;&nbsp;&nbsp;Nagyon</small></th>
+                    </tr>
+                    <tr style='background:#E8E8E8'>
+                        <td colspan=5>Elégedettsége a heti <b>kiszállító</b>val:</td>
+                        <td align='center'>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_delivery[0]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr>
+                        </td>
+                    </tr>
+                    <tr style='background:#F8F8F8'>
+                        <td colspan=5>Elégedettsége a heti <b>ügyfélszolgálat</b>tal:</td>
+                        <td align='center'><button
+                                onclick='this.nextSibling.style.display="inline";this.style.display="none";return false;'>Volt
+                                a héten<br />kapcsolatom velük</button><span style='display:none;'>
+                                <nobr class='ipanobr'>
+                                    <select name='ipa_answer_support[0]' class="ipaselect">
+                                        <option value='0' selected='selected'>0</option>
+                                        <option value='1'>1</option>
+                                        <option value='2'>2</option>
+                                        <option value='3'>3</option>
+                                        <option value='4'>4</option>
+                                        <option value='5'>5</option>
+                                        <option value='6'>6</option>
+                                        <option value='7'>7</option>
+                                        <option value='8'>8</option>
+                                        <option value='9'>9</option>
+                                        <option value='10'>10</option>
+                                    </select>
+                                    <input type='hidden' name='xxx' value='0'><img
+                                        src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,1);'
+                                        style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                        onclick='ipa_answer(this,2);' style='cursor:pointer;margin:2px;'><img
+                                        src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,3);'
+                                        style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                        onclick='ipa_answer(this,4);' style='cursor:pointer;margin:2px;'><img
+                                        src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,5);'
+                                        style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                        onclick='ipa_answer(this,6);' style='cursor:pointer;margin:2px;'><img
+                                        src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,7);'
+                                        style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                        onclick='ipa_answer(this,8);' style='cursor:pointer;margin:2px;'><img
+                                        src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,9);'
+                                        style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                        onclick='ipa_answer(this,10);' style='cursor:pointer;margin:2px;'>
+                                </nobr>
+                            </span></td>
+                    </tr>
+                    <tr style='background:#E8E8E8'>
+                        <td colspan=5>Elégedettsége a heti <b>étlap változatosság</b>ával:</td>
+                        <td align='center'>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_vary[0]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr>
+                        </td>
+                    </tr>
+                    <tr style='background:#E8E8E8'>
+                        <td colspan=5>Elégedettsége a <b>weboldal</b>lal:</td>
+                        <td align='center'>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_web[0]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr>
+                        </td>
+                    </tr>
+                    <tr style='background:#E8E8E8'>
+                        <td colspan=5>Elégedettsége a <b>szolgáltatás összességé</b>vel:</td>
+                        <td align='center'>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_overall[0]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan=7>Az ön által megrendelt ételek értékelése</th>
+                    </tr>
+                    <tr>
+                        <th>Nap</th>
+                        <th>Menü</th>
+                        <th colspan='2'>Leírás</th>
+                        <th>Egys.ár</th>
+                        <th>Ízvilág<br>Ár-Érték arány</th>
+                    </tr>
+                    <tr id="harmadik_kerdes" style='background:#E8E8E8'>
+                        <td rowspan=2 style='border-right:2px solid #fff;background:#E0E0E0'><b>Hétfõ
+                            </b><br />03.29.</td>
+                        <td style='border-right:2px solid #fff;color:#fff;background-color:#3820ac;'><b>F2</b></td>
+                        <td colspan='2' style='border-right:2px solid #fff;'>Magyaros zöldborsófőzelék, Kis bécsi szelet
+                        </td>
+                        <td style='border-right:2px solid #fff;' align='right'>
+                            <nobr>995&nbsp;Ft</nobr>
+                        </td>
+                        <td align='center'>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_like[615_1]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr><br>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_reasonable[615_1]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr>
+                        </td>
+                    </tr>
+                    <tr style='background:#F8F8F8'>
+                        <td style='border-right:2px solid #fff;color:#fff;background-color:#1AF499;'><b>R1</b></td>
+                        <td colspan='2' style='border-right:2px solid #fff;'>Camamberttel töltött rántott palacsinta,
+                            jázmin rizs, áfonyaöntet</td>
+                        <td style='border-right:2px solid #fff;' align='right'>
+                            <nobr>1 295&nbsp;Ft</nobr>
+                        </td>
+                        <td align='center'>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_like[620_1]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr><br>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_reasonable[620_1]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr>
+                        </td>
+                    </tr>
+                    <tr style='background:#E8E8E8'>
+                        <td rowspan=2 style='border-right:2px solid #fff;background:#F0F0F0'><b>Kedd
+                            </b><br />03.30.</td>
+                        <td style='border-right:2px solid #fff;color:#fff;background-color:#008039;'><b>K3</b></td>
+                        <td colspan='2' style='border-right:2px solid #fff;'>Piedone penne (bab, kolbász, hagyma, sonka,
+                            kukorica)</td>
+                        <td style='border-right:2px solid #fff;' align='right'>
+                            <nobr>895&nbsp;Ft</nobr>
+                        </td>
+                        <td align='center'>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_like[609_2]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr><br>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_reasonable[609_2]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr>
+                        </td>
+                    </tr>
+                    <tr style='background:#F8F8F8'>
+                        <td style='border-right:2px solid #fff;color:#fff;background-color:#1AF499;'><b>O1</b></td>
+                        <td colspan='2' style='border-right:2px solid #fff;'>Rántott sertés máj, rizi-bizi</td>
+                        <td style='border-right:2px solid #fff;' align='right'>
+                            <nobr>795&nbsp;Ft</nobr>
+                        </td>
+                        <td align='center'>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_like[641_2]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr><br>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_reasonable[641_2]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr>
+                        </td>
+                    </tr>
+                    <tr style='background:#E8E8E8'>
+                        <td rowspan=2 style='border-right:2px solid #fff;background:#E0E0E0'><b>Szerda
+                            </b><br />03.31.</td>
+                        <td style='border-right:2px solid #fff;color:#fff;background-color:#008039;'><b>K2</b></td>
+                        <td colspan='2' style='border-right:2px solid #fff;'>Tejszínes csirkemáj spagetti ágyon magokkal
+                        </td>
+                        <td style='border-right:2px solid #fff;' align='right'>
+                            <nobr>695&nbsp;Ft</nobr>
+                        </td>
+                        <td align='center'>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_like[608_3]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr><br>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_reasonable[608_3]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr>
+                        </td>
+                    </tr>
+                    <tr style='background:#F8F8F8'>
+                        <td style='border-right:2px solid #fff;color:#fff;background-color:#1AF499;'><b>O2</b></td>
+                        <td colspan='2' style='border-right:2px solid #fff;'>őszibarackkal töltött rántott csirkemell,
+                            burgonyapüré</td>
+                        <td style='border-right:2px solid #fff;' align='right'>
+                            <nobr>995&nbsp;Ft</nobr>
+                        </td>
+                        <td align='center'>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_like[642_3]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr><br>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_reasonable[642_3]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr>
+                        </td>
+                    </tr>
+                    <tr style='background:#E8E8E8'>
+                        <td rowspan=3 style='border-right:2px solid #fff;background:#F0F0F0'><b>Csütörtök
+                            </b><br />04.01.</td>
+                        <td style='border-right:2px solid #fff;color:#fff;background-color:#008039;'><b>K1</b></td>
+                        <td colspan='2' style='border-right:2px solid #fff;'>pulykapörkölt, tészta köret</td>
+                        <td style='border-right:2px solid #fff;' align='right'>
+                            <nobr>795&nbsp;Ft</nobr>
+                        </td>
+                        <td align='center'>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_like[607_4]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr><br>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_reasonable[607_4]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr>
+                        </td>
+                    </tr>
+                    <tr style='background:#F8F8F8'>
+                        <td style='border-right:2px solid #fff;color:#fff;background-color:#1AF499;'><b>O1</b></td>
+                        <td colspan='2' style='border-right:2px solid #fff;'>Szezámmagos rántott csirkemell, rizi-bizi
+                        </td>
+                        <td style='border-right:2px solid #fff;' align='right'>
+                            <nobr>995&nbsp;Ft</nobr>
+                        </td>
+                        <td align='center'>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_like[641_4]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr><br>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_reasonable[641_4]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr>
+                        </td>
+                    </tr>
+                    <tr style='background:#E8E8E8'>
+                        <td style='border-right:2px solid #fff;color:#fff;background-color:#FF0000;'><b>D1</b></td>
+                        <td colspan='2' style='border-right:2px solid #fff;'>Kókusz és raffaello golyók</td>
+                        <td style='border-right:2px solid #fff;' align='right'>
+                            <nobr>390&nbsp;Ft</nobr>
+                        </td>
+                        <td align='center'>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_like[622_4]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr><br>
+                            <nobr class='ipanobr'>
+                                <select name='ipa_answer_reasonable[622_4]' class="ipaselect">
+                                    <option value='0' selected='selected'>0</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                </select>
+                                <input type='hidden' name='xxx' value='0'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,1);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,2);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,3);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,4);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,5);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,6);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,7);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,8);'
+                                    style='cursor:pointer;margin:2px;'><img src='/plugins/content/etlap/js/cs0.png'
+                                    onclick='ipa_answer(this,9);' style='cursor:pointer;margin:2px;'><img
+                                    src='/plugins/content/etlap/js/cs0.png' onclick='ipa_answer(this,10);'
+                                    style='cursor:pointer;margin:2px;'>
+                            </nobr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan=8>Megjegyzés, javaslat, észrevétel</th>
+                    </tr>
+                    <tr>
+                        <td colspan=8><textarea name='ipa_comment' style='width:100%;height:100px;'></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan=8 align='right'>
+                            <input type='submit' name='postsurvey' value='Értékelőlap beküldése'>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+        <script type='text/javascript'>
+            function ipa_answer(obj, value) {
+                var i = 0, o = obj;
+                jQuery(obj).siblings('select').val(value);
+                while (o != null && o.tagName != 'INPUT') o = o.previousSibling;
+                if (o != null) o.value = value;
+                o = o.nextSibling;
+                while (o != null && o.tagName == 'IMG' && i <= 10) {
+                    o.src = '/plugins/content/etlap/js/cs' + (++i <= value ? '1' : '0') + '.png';
+                    o = o.nextSibling;
+                }
+            }
+        </script>
+        <style>
+            .ipaselect {
+                display: none !important
+            }
+
+            @media only screen and (max-width: 760px) {
+                .ipaselect {
+                    display: inline !important;
+                    max-width: 50px !important
+                }
+
+                .ipanobr img {
+                    display: none !important
+                }
+
+                .ipaform {
+                    font-size: 12px
+                }
+
+                .ipaform button {
+                    -webkit-appearance: none
+                }
+
+                .ipaform small {
+                    display: none
+                }
+            }
+        </style>
+        <!-- ETLAP PROFILE 0.85678505897522 2021-04-01 13:03:30  -->
+
+
+
+
+        <!-- Builder #footer -->
+        <div class="uk-section-muted uk-section uk-section-small">
+            <div class="uk-container uk-container-small">
+                <div class="uk-margin-remove-top uk-margin-remove-bottom tm-grid-expand uk-child-width-1-1 uk-grid-margin uk-margin-remove-top uk-margin-remove-bottom"
+                    uk-grid>
+                    <div class="uk-width-1-1@m">
+                        <div class="uk-panel uk-text-lead uk-margin-remove-vertical uk-text-center">
+                            <div>Telefonos ügyfélszolgálat: <a href="tel:+36-70-333-1360">+36-70-333-1360</a>,&nbsp;<a
+                                    href="tel:+36-1-233-2240">+36-1-233-2240</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-section-secondary uk-section uk-section-small">
+            <div class="uk-container">
+                <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                    <div class="uk-width-1-1@m">
+                        <div class="uk-margin uk-text-center">
+                            <div class="uk-flex-middle uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>
+                                <div class="el-item">
+                                    <a class="el-content uk-button uk-button-default uk-button-small"
+                                        href="/images/pdf/aszf.pdf" target="_blank">
+                                        Általános Szerződési Feltételek
+                                    </a>
+                                </div>
+                                <div class="el-item">
+                                    <a class="el-content uk-button uk-button-default uk-button-small"
+                                        href="/images/pdf/at.pdf" target="_blank">
+                                        Adatkezelési tájékoztató
+                                    </a>
+                                </div>
+                                <div class="el-item">
+                                    <a class="el-content uk-button uk-button-default uk-button-small"
+                                        href="/index.php/gyik-2">
+                                        Gyakran Ismételt Kérdések
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-margin uk-text-center"><a href="#" uk-totop uk-scroll></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
